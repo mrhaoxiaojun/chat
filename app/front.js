@@ -1,0 +1,14 @@
+angular.module("chat",["ngRoute"]);
+angular.module("chat").config(function($routeProvider){
+    $routeProvider.when("/",{
+        templateUrl:'pages/home.html'
+    }).when("/room",{
+        templateUrl:'pages/room.html',
+        controller:'RoomCtrl'
+    }).when("/reg",{
+        templateUrl:'pages/reg.html',
+        controller:'RegCtrl'
+    }).otherwise({
+        redirectTo:'/'
+    })
+});

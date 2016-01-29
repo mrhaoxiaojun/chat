@@ -1,0 +1,23 @@
+{
+  "name": "chat",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "mrhaoxiaojun <1458149969@qq.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.9",
+    "angular-route": "~1.4.9"
+  }
+}

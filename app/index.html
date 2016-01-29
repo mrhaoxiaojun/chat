@@ -1,0 +1,54 @@
+<!doctype html >
+<html lang="en" ng-app="chat">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./vendor/bootstrap/dist/css/bootstrap.css"/>
+    <style>
+        ul{
+            margin-top: 20px;
+        }
+        ul li {
+            float: left;
+            margin-right: 15px;
+        }
+        .navbar-header a {
+            display: inline-block;
+            color:#e12b17;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .body{
+            margin-top: 132px;
+        }
+        .entermessage{
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#/">匿名聊天室</a>
+        </div>
+    </div>
+    <ul class="container">
+        <li><a href="#/" class="btn btn-default">首页</a></li>
+        <li><a href="#/room" class="btn btn-default">聊天室</a></li>
+    </ul>
+</div>
+<div ng-view></div>
+<script src="socket.io/socket.io.js"></script>
+<script src="./vendor/jquery/dist/jquery.js"></script>
+<script src="./vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script src="./vendor/angular/angular.js"></script>
+<script src="./vendor/angular-route/angular-route.js"></script>
+<script src="./front.js"></script>
+<script src="js/controller/RoomCtrl.js"></script>
+<script src="js/service/socket.js"></script>
+<script src="js/directive/ctrlEnterBreakLineDirective.js"></script>
+<script src="js/directive/autoScrollToBottomDirective.js"></script>
+</body>
+</html>
