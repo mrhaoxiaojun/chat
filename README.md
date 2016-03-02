@@ -23,4 +23,4 @@ console.log("没有做登录注册，本人才疏学浅…… 不吝赐教")
 
 ## API
 
-#### no API this一个半成品，有兴趣一起玩 mr_hao918512@126.com
+#### no API this一个半成品，有兴趣一起研究 mr_hao918512@126.com
